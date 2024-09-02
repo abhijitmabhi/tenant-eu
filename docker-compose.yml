@@ -1,0 +1,13 @@
+
+services:
+  tenant-eu:
+    container_name: tenant-eu
+    build: .
+    ports:
+      - "8082:8082"
+    networks:
+      - shared-tenant-network
+
+networks:
+  shared-tenant-network:
+    driver: bridge

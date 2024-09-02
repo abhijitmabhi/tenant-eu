@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: tenant-eu
+server:
+  port: 8082
+
